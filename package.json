@@ -1,0 +1,18 @@
+{
+  "name": "adoleta",
+  "version": "1.0.0",
+  "description": "Projeto de conclusão de curso Reprograma Imersão JS",
+  "main": "api.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Caroline Silva Lima",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "express": "^4.18.2"
+
+  }
+
+}
