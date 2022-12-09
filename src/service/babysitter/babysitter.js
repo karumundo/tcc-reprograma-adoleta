@@ -2,14 +2,15 @@ const Person = require('../person/person');
 
 class Babysitter extends Person{
     #password
-    constructor(name, email, password, description, period_value, quantity_children){
+    constructor(name, email, password, description, period_price, quantity_children){
         super(name, email, password)
         this.description = description
-        this.period_value = period_value
+        this.period_price = period_price
         this.quantity_children = quantity_children
     }
+    static babysitters = [];
+
 };
 
-const babys1 = new Babysitter ('Lourdes', 'll@gmail.com', '1234', '12 anos de experiência', 50, 5)
-console.log(babys1);
+
 module.exports = Babysitter;
