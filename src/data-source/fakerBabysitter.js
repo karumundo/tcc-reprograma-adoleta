@@ -4,7 +4,7 @@ const { faker } = require("@faker-js/faker");
 //const { v4: uuidv4 } = require("uuid");
 
 const Babysitter = require("../service/babysitter/babysitter");
-const createBabysitter = require("../controller/babysitterController");
+const babysitterControler = require("../controller/babysitterController");
 
 function mockBabysitters() {
   for (let i = 0; i < 10; i++) {
@@ -15,7 +15,7 @@ function mockBabysitters() {
     let period_priceValue = faker.random.numeric(2);
     let quantity_childrenValue = faker.random.numeric(1);
 
-    createBabysitter(
+    babysitterControler.createBabysitter(
       nameValue,
       emailValue,
       passwordValue,
@@ -24,6 +24,6 @@ function mockBabysitters() {
       quantity_childrenValue
     );
   }
-}
-//console.log(mockBabysitters());
-//console.log(Babysitter.babysitters);
+};
+
+module.exports = {mockBabysitters};

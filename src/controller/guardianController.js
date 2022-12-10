@@ -1,7 +1,7 @@
 const Guardian = require("../service/guardian/guardian");
 
-function createGuardian(name, email, password, description){
-  const newGuardian = new Guardian(name, email, password, description);
+function createGuardian(name, email, password, description, quantity_children){
+  const newGuardian = new Guardian(name, email, password, description, quantity_children);
   Guardian.guardians.push(newGuardian);
   return `New user successfully created`;
 };
@@ -20,7 +20,8 @@ function patchGuardian (guardian){
   const _guardian = getGuardian(guardian.name);
   _guardian.email = guardian.email;
   _guardian.password = guardian.password;
-  _guardian.description = guardian.description
+  _guardian.description = guardian.description;
+  _quantity_children = guardian._quantity_children
   return _guardian
 };
 

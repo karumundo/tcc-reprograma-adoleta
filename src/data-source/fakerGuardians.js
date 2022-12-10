@@ -12,13 +12,19 @@ function mockGuardians() {
     let emailValue = faker.internet.email();
     let passwordValue = faker.internet.password();
     let descriptionValue = faker.lorem.lines(2);
-    guardianController.createGuardian(nameValue, emailValue, passwordValue, descriptionValue);
+    let quantity_childrenValue = faker.random.numeric(1);
+    
+    guardianController.createGuardian(
+      nameValue,
+      emailValue,
+      passwordValue,
+      descriptionValue,
+      quantity_childrenValue
+    );
   }
-};
+}
 
 //console.log(mockGuardians());
 //console.log(Guardian.guardians);
 
-module.exports = {mockGuardians};
-
-
+module.exports = { mockGuardians };
