@@ -1,5 +1,5 @@
 const Guardian = require('./service/guardian/guardian');
-const guardianController = require('./controller/guardianController');
+const guardianController = require('./controller/guardianController/guardianController');
 const fakerGuardians = require('./data-source/fakerGuardians');
 const Babysitter = require('./service/babysitter/babysitter');
 const babysitterControler = require('./controller/babysitterController');

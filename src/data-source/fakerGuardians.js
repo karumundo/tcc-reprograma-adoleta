@@ -4,7 +4,7 @@ const { faker } = require("@faker-js/faker");
 //const { v4: uuidv4 } = require("uuid");
 
 const Guardian = require("../service/guardian/guardian");
-const guardianController = require("../controller/guardianController");
+const guardianController = require("../controller/guardianController/guardianController");
 
 function mockGuardians() {
   for (let i = 0; i < 10; i++) {

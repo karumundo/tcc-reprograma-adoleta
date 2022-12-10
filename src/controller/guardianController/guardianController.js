@@ -1,4 +1,4 @@
-const Guardian = require("../service/guardian/guardian");
+const Guardian = require("../../service/guardian/guardian");
 
 function createGuardian(name, email, password, description, quantity_children){
   const newGuardian = new Guardian(name, email, password, description, quantity_children);

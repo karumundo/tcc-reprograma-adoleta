@@ -1,7 +1,6 @@
-const Person = require('../service/person/person');
-const Guardian = require('../service/guardian/guardian');
+const Guardian = require('../../service/guardian/guardian');
 const guardianController = require('./guardianController');
-const fakerGuardians = require('../data-source/fakerGuardians');
+const fakerGuardians = require('../../data-source/fakerGuardians');
 fakerGuardians.mockGuardians();
 
 describe('Guardian class', ()=>{
