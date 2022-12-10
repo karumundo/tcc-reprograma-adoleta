@@ -11,6 +11,31 @@ const fakerLocality = require('./data-source/fakerLocality')
 fakerGuardians.mockGuardians();
 fakerBabysitter.mockBabysitters();
 
+// -- GUARDIAN --
+
+//LISTA DE GUARDIASN criada à partir do faker que, por sua vez, utiliza a função createGuardians
+console.log(guardianController.getAllGuardians());
+
+//GET ONE GUARDIAN
+//console.log(guardianController.getGuardian(Guardian.guardians[2].name));
+
+//PATCH GUARDIAN
+/*
+const updateGuardian = {
+    ...Guardian.guardians[3], description:'Oi, eu sou o Goku'
+};
+console.log(guardianController.patchGuardian(updateGuardian));
+*/
+
+// DELETE GUARDIAN
+/*
+guardianController.deleteGuardian(Guardian.guardians[9]);
+console.log('DEPOIS DE DELETAR')
+console.log(guardianController.getAllGuardians());
+console.log(guardianController.patchGuardian(updateGuardian));
+console.log(Guardian.guardians);
+*/
+
 // - BABYSITTERS -
 
 //LISTA DE BABYSITTERS criada à partir do faker que, por sua vez, utiliza a função createBabysitter
@@ -34,30 +59,4 @@ console.log(Babysitter.babysitters);
 babysitterControler.deleteBabysitter(Babysitter.babysitters[9])
 console.log('DEPOIS DE DELETAR')
 console.log(Babysitter.babysitters);
-*/
-
-
-// -- GUARDIAN --
-
-//LISTA DE GUARDIASN criada à partir do faker que, por sua vez, utiliza a função createGuardians
-//console.log(guardianController.getAllGuardians());
-
-//GET ONE GUARDIAN
-//console.log(guardianController.getGuardian(Guardian.guardians[2].name));
-
-//PATCH GUARDIAN
-/*
-const updateGuardian = {
-    ...Guardian.guardians[3], description:'Oi, eu sou o Goku'
-};
-console.log(guardianController.patchGuardian(updateGuardian));
-*/
-
-// DELETE GUARDIAN
-/*
-guardianController.deleteGuardian(Guardian.guardians[9]);
-console.log('DEPOIS DE DELETAR')
-console.log(guardianController.getAllGuardians());
-console.log(guardianController.patchGuardian(updateGuardian));
-console.log(Guardian.guardians);
 */
