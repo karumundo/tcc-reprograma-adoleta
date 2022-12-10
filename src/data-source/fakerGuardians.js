@@ -22,9 +22,6 @@ function mockGuardians() {
       quantity_childrenValue
     );
   }
-}
-
-//console.log(mockGuardians());
-//console.log(Guardian.guardians);
+};
 
 module.exports = { mockGuardians };

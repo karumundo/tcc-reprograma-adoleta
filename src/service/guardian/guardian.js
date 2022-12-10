@@ -7,7 +7,7 @@ class Guardian extends Person {
     super(name, email);
     this.password = password;
     this.description = description;
-    this.quantity_children
+    this.quantity_children = quantity_children
   };
   
   static guardians = [];

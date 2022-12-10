@@ -14,10 +14,10 @@ fakerBabysitter.mockBabysitters();
 // -- GUARDIAN --
 
 //LISTA DE GUARDIASN criada à partir do faker que, por sua vez, utiliza a função createGuardians
-console.log(guardianController.getAllGuardians());
+//console.log(guardianController.getAllGuardians());
 
 //GET ONE GUARDIAN
-//console.log(guardianController.getGuardian(Guardian.guardians[2].name));
+console.log(guardianController.getGuardian(Guardian.guardians[2].name));
 
 //PATCH GUARDIAN
 /*
