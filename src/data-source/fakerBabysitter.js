@@ -25,5 +25,5 @@ function mockBabysitters() {
     );
   }
 }
-console.log(mockBabysitters());
-console.log(Babysitter.babysitters);
+//console.log(mockBabysitters());
+//console.log(Babysitter.babysitters);
